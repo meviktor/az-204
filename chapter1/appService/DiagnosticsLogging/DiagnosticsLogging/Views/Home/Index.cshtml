@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <h1>Test logging</h1>
+    <div class="row large-bottom-margin">
+        <div class="col-lg-4 col-md-2">
+            <h4>Throw an exception</h4>
+            <div>
+                <p>This should create an error application log with the message typed below and and other error logs.</p>
+                <button id="exThrowBtn" class="btn btn-dark">Execute</button>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-2">
+            <h4>Log error</h4>
+            <div>
+                <p>This should create an error application log with the message typed below.</p>
+                <button id="logErrBtn" class="btn btn-danger">Execute</button>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-2">
+            <h4>Log warning</h4>
+            <div>
+                <p>This should create a warning application log with the message typed below.</p>
+                <button id="logWarnBtn" class="btn btn-warning">Execute</button>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-2">
+            <h4>Log information</h4>
+            <div>
+                <p>This should create an info application log with the message typed below.</p>
+                <button id="logInfoBtn" class="btn btn-success">Execute</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h4>Log message</h4>
+        <div>
+            <p>Type the message will be displayed in the logs here.</p>
+            <input id="messageInput" type="text" />
+        </div>
+    </div>
+</div>
