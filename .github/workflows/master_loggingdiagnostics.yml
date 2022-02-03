@@ -26,7 +26,7 @@ jobs:
         run: dotnet build ./chapter1/appService/DiagnosticsLogging/DiagnosticsLogging/DiagnosticsLogging.csproj --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish dotnet build ./chapter1/appService/DiagnosticsLogging/DiagnosticsLogging/DiagnosticsLogging.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish ./chapter1/appService/DiagnosticsLogging/DiagnosticsLogging/DiagnosticsLogging.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
