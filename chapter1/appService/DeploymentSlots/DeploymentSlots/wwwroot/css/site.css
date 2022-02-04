@@ -1,0 +1,32 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.left {
+    text-align: left;
+    padding: 10px;
+    margin: 10px
+}
+
+.theadCell {
+    background-color: #5f9330;
+}
+
+.tbodyCell {
+    background-color: #a5db7c;
+}

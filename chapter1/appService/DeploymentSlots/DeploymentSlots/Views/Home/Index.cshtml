@@ -1,0 +1,38 @@
+﻿@using DeploymentSlots.ViewModels
+@model UserViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="text-center">
+    <h1 class="display-4">Users</h1>
+    @if(Model!.ExceptionName == null)
+    {
+        <table>
+            <thead>
+                <tr>
+                    <th class="left theadCell">Id</th>
+                    <th class="left theadCell">Name</th>
+                    <th class="left theadCell">Department</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model.Users)
+                {
+                    <tr>
+                        <td class="left tbodyCell">@user.Id</td>
+                        <td class="left tbodyCell">@user.Name</td>
+                        <td class="left tbodyCell">@user.Department</td>
+                    </tr>
+                }
+            </tbody>
+      </table>   
+    }
+    @if(Model!.ExceptionName != null)
+    {
+        <div class="card">
+            <div class="card-body" style="background-color: #ebaba0;">
+                <div><i class="bi bi-x-circle-fill"></i>Users cannot be displayed. @Model!.ExceptionName occurred.</div>
+            </div>
+        </div>
+    }
+</div>
