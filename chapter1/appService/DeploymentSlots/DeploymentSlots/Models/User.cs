@@ -9,6 +9,6 @@ namespace DeploymentSlots.Models
 
         public string Name { get; set; } = null!;
 
-        public string Department { get; set; } = null!;
+        public string  Division { get; set; } = null!;
     }
 }

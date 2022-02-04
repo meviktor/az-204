@@ -13,8 +13,8 @@ namespace DeploymentSlots.Models
             if (!Users.Any())
             {
                 Users.AddRange(
-                    new User { Id = Guid.NewGuid(), Name = "Angela", Department = "Sales" },
-                    new User { Id = Guid.NewGuid(), Name = "Rick", Department = "Legal team" }
+                    new User { Id = Guid.NewGuid(), Name = "Angela", Division = "Sales" },
+                    new User { Id = Guid.NewGuid(), Name = "Rick", Division = "Legal team" }
                 );
                 SaveChanges();
             }
